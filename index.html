@@ -67,6 +67,18 @@
       margin-bottom: 1.6em;
     }
 
+    .avatar {
+      display: block;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      /* Inside stroke: outline paints over the image, offset pulls it in. */
+      outline: 1px solid rgba(0, 0, 0, 0.1);
+      outline-offset: -1px;
+      margin-bottom: 2.4em;
+    }
+
     a {
       color: #2563eb;
       text-decoration: none;
@@ -89,6 +101,9 @@
 </head>
 <body>
   <main>
+    <img class="avatar" src="headshot.jpg" width="80" height="80"
+         alt="David Boselli">
+
     <p>
       Hi, I'm David Boselli, a product designer based in Seattle with over a
       decade of experience shipping work across agency and product teams.
